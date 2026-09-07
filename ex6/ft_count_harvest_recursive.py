@@ -3,9 +3,9 @@ def ft_count_harvest_recursive() -> None:
     countdown(1, days)
 
 
-def countdown(current, days):
+def countdown(current, days) -> None:
     if current > days:
         print("Harvest time!")
     else:
-        print("Day ", current)
+        print(f"Day {current}")
         countdown(current + 1, days)
